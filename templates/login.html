@@ -1,0 +1,15 @@
+<div class="row col-md-12">
+	<div class="col-md-3 col-md-offset-5" style="text-align: center">
+		<form name="formLogin" ng-submit="ingresar(login)">
+			<h3>Login</h3>
+			<div class="form-group">
+				<input class="form-control" type="email" ng-model="login.email" placeholder="Email" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password"  ng-model="login.password" placeholder="Contraseña" required>
+			</div>
+			<input type="submit" class="btn btn-success" value="Ingresar" ng-disabled="formLogin.$invalid">
+			<input type="button" value="Registrarme" class="btn btn-info" ng-click="cambiarPagina('registro')">
+		</form>
+	</div>
+</div>
